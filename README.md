@@ -9,7 +9,34 @@ This is a frontend engineering assessment for Sunday, focused on building a Reac
 - We are less concerned with the completeness of the solution, and more concerned with your approach to solving the problem and working with the interviewer.
 
 ## Challenge & Requirements
-To be sent once the interview session starts. Feel free to familiarize yourself with the project until then.
+
+Your task is to implement the missing functionality in this application, allowing users to build a lawn care subscription plan by adding products to their cart and generating a shipment schedule based on the application dates of the products.
+
+### Requirements
+1. **Add interactivity to the product cards:**
+   - Implement the "Add to Subscription" and "Add one time" functionality for each product
+   - Only products with `isSubscribable: true` should be allowed to be added as recurring items
+   - Products with `isSubscribable: false` should only be available as one-time purchases
+
+
+2. **Implement cart functionality:**
+   - Add state management for recurring and one-time items
+   - Implement the ability to remove items from the cart
+   - Calculate and display the monthly subscription total and the one-time purchase total
+
+3. **Generate shipment plan:**
+   - When the "Generate Lawn Plan" button is clicked, create a shipment schedule based on the application dates of the products in the cart
+   - Each product should be assigned to a shipment that falls within its application window (`applicationStart` to `applicationEnd`)
+   - Display the shipment schedule with appropriate dates and included products
+
+### Acceptance Criteria
+
+1. Users can add subscribable products to their recurring subscription
+2. Users can add any product as a one-time purchase
+3. Users can remove products from their cart
+4. The application correctly calculates and displays totals
+5. Clicking "Generate Lawn Plan" produces a logical shipment schedule based on product application dates
+6. The UI is responsive and provides appropriate feedback to user actions
 
 ## Getting Started
 
